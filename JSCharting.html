@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Area Types Chart | JSCharting</title>
+    <meta http-equiv="content-type" content="text-html; charset=utf-8" />
+
+    <script src="https://code.jscharting.com/latest/jscharting.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div id="chartDiv" style="max-width: 740px; height: 400px; margin: 0px auto;"></div>
+
+    <script type="text/javascript">
+        /*
+  All area series types.
+  Learn how to:
+  
+    - Change series type in real-time.
+  */
+        // JS 
+        var chart = JSC.chart('chartDiv', {
+            debug: true,
+            type: 'line',
+            title_label_text: 'Line Series Types',
+            legend_position: 'inside bottom right',
+            defaultCultureName: "nl-NL",
+            yAxis: { formatString: 'c0' },
+            series: [
+                {
+                    name: 'Omzet',
+                    points: [
+                        ['januari 2020', 18421.77],
+                        ['februari 2020', 10068.04],
+                        ['maart 2020', 16168.44],
+                        ['april 2020', 11577.65],
+                        ['mei 2020', 3891.14],
+                        ['juni 2020', 0],
+                        ['juli 2020', 0],
+                        ['augustus 2020', 0],
+                        ['september 2020', 0],
+                        ['oktober 2020', 0],
+                        ['november 2020', 0],
+                        ['december 2020', 0]
+                    ]
+                }, {
+                    name: 'Prognose',
+                    points: [
+                        ['januari 2020', 12500],
+                        ['februari 2020', 12500],
+                        ['maart 2020', 12500],
+                        ['april 2020', 12500],
+                        ['mei 2020', 12500],
+                        ['juni 2020', 12500],
+                        ['juli 2020', 12500],
+                        ['augustus 2020', 12500],
+                        ['september 2020', 12500],
+                        ['oktober 2020', 12500],
+                        ['november 2020', 12500],
+                        ['december 2020', 12500]
+                    ]
+                }
+            ]
+        }); 
+    </script>
+</body>
+
+</html>
